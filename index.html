@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina Nova Practica</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="main__wrapper">
+    <nav class="navbar">
+      <div class="nav__brand">
+        <img src="images/logo.svg" alt="navbar-logo" class="brand__icon" />
+        <span class="brand__text">NOVA</span>
+      </div>
+
+      <div class="nav__menu">
+        <a class="nav__link" href="#">Music</a>
+        <a class="nav__link" href="#tour">Tour</a>
+        <a class="nav__link" href="#store">Store</a>
+      </div>
+
+      <button class="mobile__menu-btn">
+        <span class="material-symbols-outlined"> menu </span>
+      </button>
+    </nav>
+
+    <div class="mobile__drawer">
+      <div class="drawer__header">
+        <div class="nav__brand">
+          <img src="images/logo.svg" alt="navbar-logo" class="brand__icon" />
+          <span class="brand__text">NOVA</span>
+        </div>
+        <button class="drawer__close">
+          <span class="material-symbols-outlined"> Close </span>
+        </button>
+      </div>
+
+      <div class="drawer__links">
+        <a data-text="Tour" class="drawer__link" href="#tour">Tour</a>
+        <a data-text="Store" class="drawer__link" href="#store">Store</a>
+        <a data-text="Music" class="drawer__link" href="#">Music</a>
+      </div>
+
+      <div class="drawer__footer">
+        <div class="social__widget-mobile">
+          <a href="#" class="social__link">
+            <span class="social__text">IG</span>
+          </a>
+          <a href="#" class="social__link">
+            <span class="social__text">YT</span>
+          </a>
+          <a href="#" class="social__link">
+            <span class="social__text">SP</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+    <section class="hero">
+      <div class="hero__visual">
+        <video class="hero__video" src="videos/hero-video.mp4" type="video/mp4" autoplay muted loop></video>
+      </div>
+
+      <div class="hero__content">
+        <h2 class="hero__subtitle animate-pulse">New Album Out Now</h2>
+        <h1 class="hero__title">
+          ECO <br />
+          <span class="text__stroke">LOCA</span> <br />
+          TION
+        </h1>
+
+        <div class="hero__actions">
+          <button class="btn__primary">
+            <span class="material-symbols-outlined"> play_arrow </span>
+            <span>Listen Now</span>
+          </button>
+
+          <a href="#" class="link__secondary">
+            <span>View Tour Dates</span>
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="player__widget glass-panel">
+        <div class="player__art">
+          <img src="images/album-thumbnail.png" alt="album-art" />
+          <div class="player__art-overlay">
+            <span class="material-symbols-outlined"> graphic_eq </span>
+          </div>
+        </div>
+
+        <div class="player__info">
+          <div class="player__label">Now Playing</div>
+          <div class="player__title">Echolocation (Ambient Mix)</div>
+          <div class="progress__bar">
+            <div class="progress__fill"></div>
+          </div>
+        </div>
+
+        <button class="btn__play-pause">
+          <span class="material-symbols-outlined"> pause </span>
+        </button>
+      </div>
+
+      <div class="social__widget">
+        <a href="#" class="social__link">
+          <span class="social__text">IG</span>
+        </a>
+        <a href="#" class="social__link">
+          <span class="social__text">YT</span>
+        </a>
+        <a href="#" class="social__link">
+          <span class="social__text">SP</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="store" class="store__section">
+      <div class="section__header">
+        <h2 class="section__title">
+          Latest <br /><span class="text__primary">Drops</span>
+        </h2>
+        <a class="btn__view-all" href="#">View All</a>
+      </div>
+
+      <div class="products__grid">
+        <div class="product__card">
+          <div class="product__img-wrapper">
+            <img src="images/product1.png" alt="" class="product__img" />
+
+            <div class="product__overlay">
+              <button class="btn__overlay">Pre-Order</button>
+            </div>
+          </div>
+
+          <div class="product__detail">
+            <div>
+              <h3 class="product__name">Limited Edition Vinyl</h3>
+              <p class="product__description">Translucent Purple</p>
+            </div>
+            <span class="product__price">$35.00</span>
+          </div>
+        </div>
+
+        <div class="product__card">
+          <div class="product__img-wrapper">
+            <img src="images/product2.png" alt="" class="product__img" />
+
+            <div class="product__overlay">
+              <button class="btn__overlay">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product__detail">
+            <div>
+              <h3 class="product__name">Tour Hoodie</h3>
+              <p class="product__description">
+                Heavyweight Cotton • Oversized
+              </p>
+            </div>
+            <span class="product__price">$65.00</span>
+          </div>
+        </div>
+
+        <div class="product__card">
+          <div class="product__img-wrapper">
+            <img src="images/product3.png" alt="" class="product__img" />
+
+            <div class="product__overlay">
+              <button class="btn__overlay">Download</button>
+            </div>
+          </div>
+
+          <div class="product__detail">
+            <div>
+              <h3 class="product__name">Digital Bundle</h3>
+              <p class="product__description">FLAC + 4K Wallpapers</p>
+            </div>
+            <span class="product__price">$15.00</span>
+          </div>
+        </div>
+
+        <div class="product__card">
+          <div class="product__img-wrapper">
+            <img src="images/product4.png" alt="" class="product__img" />
+
+            <div class="product__overlay">
+              <button class="btn__overlay">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product__detail">
+            <div>
+              <h3 class="product__name">Nike Air Force 1</h3>
+              <p class="product__description">Version White/Grey</p>
+            </div>
+            <span class="product__price">$120.00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tour Section  -->
+    <section id="tour" class="tour__section">
+      <div class="tour__container">
+        <div class="tour__header">
+          <h2>World <span class="text__stroke">Tour</span></h2>
+          <p>Europe / North America 2026</p>
+        </div>
+
+        <div class="tour__list">
+          <div class="tour__item tour__item-first">
+            <div class="tour__info-group">
+              <div class="tour___info-block">
+                <span class="tour__date">
+                  <span class="tour__date-main">Oct 12</span>
+                  <span class="tour__date-sub">Saturday</span>
+                </span>
+              </div>
+
+              <div class="tour__location-block">
+                <h3 class="tour__city">London</h3>
+                <p class="tour__venue">The 02 Arena</p>
+              </div>
+            </div>
+            <button class="btn__tickets">Tickets</button>
+          </div>
+        </div>
+
+        <div class="tour__list">
+          <div class="tour__item">
+            <div class="tour__info-group">
+              <div class="tour___info-block">
+                <span class="tour__date">
+                  <span class="tour__date-main">Oct 12</span>
+                  <span class="tour__date-sub">Saturday</span>
+                </span>
+              </div>
+
+              <div class="tour__location-block">
+                <h3 class="tour__city">Berlin</h3>
+                <p class="tour__venue">Berghain</p>
+              </div>
+            </div>
+
+            <button class="btn__sold-out">Sold Out</button>
+          </div>
+        </div>
+        <div class="tour__list">
+          <div class="tour__item">
+            <div class="tour__info-group">
+              <div class="tour___info-block">
+                <span class="tour__date">
+                  <span class="tour__date-main">Oct 18</span>
+                  <span class="tour__date-sub">Friday</span>
+                </span>
+              </div>
+
+              <div class="tour__location-block">
+                <h3 class="tour__city">Paris</h3>
+                <p class="tour__venue">Le Zénith</p>
+              </div>
+            </div>
+            <button class="btn__tickets">Tickets</button>
+          </div>
+        </div>
+        <div class="tour__list">
+          <div class="tour__item">
+            <div class="tour__info-group">
+              <div class="tour___info-block">
+                <span class="tour__date">
+                  <span class="tour__date-main">Nov 02</span>
+                  <span class="tour__date-sub">Friday</span>
+                </span>
+              </div>
+
+              <div class="tour__location-block">
+                <h3 class="tour__city">New York</h3>
+                <p class="tour__venue">Brooklyn Steel</p>
+              </div>
+            </div>
+            <button class="btn__tickets">Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter__section">
+      <span class="newsletter__icon material-symbols-outlined">
+        all_inclusive
+      </span>
+      <h2 class="newsletter__title">Join The Collective</h2>
+      <p class="newsletter__description">
+        Be the first hear about new releases, exclusive merchandise, and
+        secret shows
+      </p>
+      <form class="newsletter__form">
+        <input type="email" name="enauk" placeholder="YOUR MAIL ADDRESS" class="newsletter__input" />
+        <button class="newsletter__submit" type="submit">Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer__content">
+      <div class="footer__logo">NOVA</div>
+      <div class="footer__links">
+        <a href="#" class="footer__link">Privacy</a><a href="#" class="footer__link">Terms</a><a href="#"
+          class="footer__link">Contact</a>
+      </div>
+      <div class="footer__copy">&copy; 2025 NOVA MUSIC GROUP</div>
+    </div>
+  </footer>
+  </div>
+  <script src="/main.js"></script>
+</body>
+
+</html>
